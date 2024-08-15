@@ -22,14 +22,14 @@ let getHumanChoice=()=>{
 
 let playRound=(a,b)=> {
     if(a == b){ 
-        return `Tie, ${b}`; 
+        alert(`Tie`);  
     }
     else{ 
         if((a == "rock" && b == "scissors") || (a=="paper" && b=="rock") || (a == "scissors" && b =="paper")) { 
-            return `I won!, ${b}`; 
+            alert (`I won!`);
         }
         else { 
-            return `I lose,${b}`;
+            alert(`I lose`); 
         }
     }
 }
