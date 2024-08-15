@@ -22,19 +22,18 @@ let getHumanChoice=()=>{
 
 let playRound=(a,b)=> {
     if(a == b){ 
-        alert(`Tie`);  
+      alert(`Tie`);  
     }
     else{ 
         if((a == "rock" && b == "scissors") || (a=="paper" && b=="rock") || (a == "scissors" && b =="paper")) { 
-            alert (`I won!`);
+          alert (`I won!`);
         }
         else { 
-            alert(`I lose`); 
+         alert(`I lose`); 
         }
     }
 }
 
-console.log(playRound(getHumanChoice(),getComputerChoice()));
-
+playRound(getHumanChoice(),getComputerChoice())
 
 
